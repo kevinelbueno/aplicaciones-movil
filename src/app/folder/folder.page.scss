@@ -1,28 +1,79 @@
-ion-menu-button {
-  color: var(--ion-color-primary);
+ion-content {
+  --background: #e6e2cb; /* Cambia el color de fondo aquí */
 }
 
-#container {
-  text-align: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  width: 90%;
+  max-width: 600px; /* Limita el ancho total */
+  margin: 20px auto; /* Centra la cuadrícula */
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.button-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(216, 209, 209, 0.911);
+  padding: 20px;
+  height: 120px;
+  transition: transform 0.2s;
+  width: 100%; /* Asegura que las tarjetas ocupen todo el espacio disponible */
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-  color: #8c8c8c;
-  margin: 0;
+.button-card:hover {
+  transform: scale(1.05);
 }
 
-#container a {
-  text-decoration: none;
+.button-icon {
+  font-size: 40px;
+  color: #388E3C; /* Verde primario */
+}
+
+.button-label {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #388E3C; /* Verde primario */
+  text-align: center; /* Asegura que el texto esté centrado */
+}
+
+@media (max-width: 600px) {
+  .button-grid {
+    grid-template-columns: 1fr; /* Para pantallas pequeñas, las tarjetas ocupan todo el ancho */
+  }
+
+  .button-card {
+    height: 100px; /* Reduce la altura para pantallas pequeñas */
+    padding: 15px; /* Ajusta el relleno */
+  }
+
+  .button-icon {
+    font-size: 35px; /* Ajusta el tamaño del icono */
+  }
+
+  .button-label {
+    font-size: 12px; /* Ajusta el tamaño del texto */
+  }
+}
+/* Estilos para la imagen principal en el medio del contenido */
+.logo-image {
+  display: block;
+  width: 200px; /* Ajusta el tamaño según sea necesario */
+  height: 200px; /* Asegúrate de que el ancho y el alto sean iguales para mantener la forma circular */
+  margin: 20px auto; /* Centra la imagen horizontalmente */
+  border-radius: 50%; /* Hace que la imagen tenga forma de círculo */
+  object-fit: cover; /* Asegura que la imagen se ajuste dentro del círculo sin distorsionarse */
+}
+
+/* Estilos para las imágenes dentro de las tarjetas */
+.button-image {
+  width: 60px; /* Ajusta el tamaño según sea necesario */
+  height: 60px; /* Asegúrate de que el ancho y el alto sean iguales para mantener la forma circular */
+  border-radius: 50%; /* Hace que la imagen tenga forma de círculo */
+  object-fit: cover; /* Asegura que la imagen se ajuste dentro del círculo sin distorsionarse */
+  margin-bottom: 10px; /* Espacio entre la imagen y el icono/texto */
 }

@@ -1,18 +1,23 @@
 import { Component } from '@angular/core';
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
+  // Define las páginas que quieres en el menú
   public appPages = [
-    { title: 'Inbox', url: '/folder/inbox', icon: 'mail' },
-    { title: 'Outbox', url: '/folder/outbox', icon: 'paper-plane' },
-    { title: 'Favorites', url: '/folder/favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/spam', icon: 'warning' },
+    { title: 'Inicio de Sesión', url: '/login', icon: 'log-in' },
+    { title: 'Calendario', url: '/calendar', icon: 'calendar' },
+    { title: 'Gestor de Tareas', url: '/tasks', icon: 'list' },
+    { title: 'Rastreador de Hábitos', url: '/habits', icon: 'repeat' },
+    { title: 'Resúmenes de Productividad', url: '/productivity', icon: 'analytics' },
+    { title: 'Recomendaciones', url: '/recommendations', icon: 'book' },
+    { title: 'Crea tu Rutina', url: '/routine', icon: 'create' }
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+
+  public labels = ['Importante', 'Personal', 'Trabajo'];
+
   constructor() {}
 }
