@@ -44,6 +44,22 @@ ion-button[fill="outline"].action-button:active {
   --background: #b38867; // Un tono café claro más oscuro cuando el botón está presionado
   --color: #ffffff; // Texto blanco cuando el botón está presionado
 }
+ion-button[type="submit"].action-button {
+  --border-color: #d0a36a; // Café claro para el borde del botón de registro
+  --color: #d0a36a; // Café claro para el texto del botón de registro
+  --background: transparent; // Fondo transparente para el botón de registro
+}
+
+ion-button[type="submit"].action-button:hover {
+  --background: #d0a36a; // Fondo café claro cuando se pasa el mouse sobre el botón de registro
+  --color: #ffffff; // Texto blanco cuando se pasa el mouse sobre el botón de registro
+}
+
+ion-button[type="submit"].action-button:active {
+  --background: #b38867; // Un tono café claro más oscuro cuando el botón está presionado
+  --color: #ffffff; // Texto blanco cuando el botón está presionado
+}
+
 
 ion-note {
   font-size: 0.875rem;
