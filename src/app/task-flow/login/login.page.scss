@@ -1,13 +1,72 @@
-ion-content {
-    --background: #ffffff;
-  }
-  
-  ion-item {
-    margin-bottom: 15px;
-  }
-  
-  ion-button {
-    --background: var(--ion-color-primary);
-    --border-radius: 4px;
-  }
-  
+:host {
+  --ion-background-color: #ffffff; // Fondo blanco para la página
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 16px;
+}
+
+.login-card {
+  background-color: #ffffff; // Fondo blanco para la tarjeta
+  width: 100%;
+  max-width: 500px;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-card ion-card-title {
+  color: #d0a36a; // Café claro para el título
+}
+
+.action-button {
+  background: #d0a36a; // Café claro para el fondo del botón
+  color: #ffffff; // Texto blanco para el botón
+  margin-top: 8px;
+}
+
+ion-button[fill="outline"].action-button {
+  --border-color: #d0a36a; // Café claro para el borde del botón de registro
+  --color: #d0a36a; // Café claro para el texto del botón de registro
+  --background: transparent; // Fondo transparente para el botón de registro
+}
+
+ion-button[fill="outline"].action-button:hover {
+  --background: #d0a36a; // Fondo café claro cuando se pasa el mouse sobre el botón de registro
+  --color: #ffffff; // Texto blanco cuando se pasa el mouse sobre el botón de registro
+}
+
+ion-button[fill="outline"].action-button:active {
+  --background: #b38867; // Un tono café claro más oscuro cuando el botón está presionado
+  --color: #ffffff; // Texto blanco cuando el botón está presionado
+}
+
+ion-note {
+  font-size: 0.875rem;
+  color: #d32f2f; // Rojo para notas de error
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+ion-item {
+  margin-bottom: 16px;
+  --background: #ffffff; // Fondo blanco para los ítems del formulario
+  --border-color: #d0a36a; // Café claro para el borde del ítem
+}
+
+ion-label {
+  color: #004d40; // Verde oscuro
+}
+
+ion-input {
+  color: #ff7b00; // Color de texto
+  --background: #ffffff; // Fondo blanco para los campos de entrada
+  --placeholder-color: #fafafa; // Color del texto del placeholder
+}

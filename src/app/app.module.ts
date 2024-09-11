@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
-
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppComponent } from './app.component';  // Asegúrate de que este componente existe
 import { AppRoutingModule } from './app-routing.module';  // Asegúrate de tener este módulo también
@@ -14,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';  // Asegúrate de tener
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule
+    
   ],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
