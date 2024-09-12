@@ -8,46 +8,37 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  
   <!-- Imagen en el medio del contenido -->
   <img src="assets/images/logo.png" class="logo-image" alt="Logo">
 
-
-  
   <div class="button-grid">
-    <div class="button-card">
+    <ion-router-link routerLink="/login" class="button-card">
       <ion-icon name="log-in" class="button-icon"></ion-icon>
       <p class="button-label">Inicio de Sesión</p>
-    </div>
-    <div class="button-card">
+    </ion-router-link>
+    <ion-router-link routerLink="/calendar" class="button-card">
       <ion-icon name="calendar" class="button-icon"></ion-icon>
       <p class="button-label">Calendario</p>
-    </div>
-    <div class="button-card">
+    </ion-router-link>
+    <ion-router-link routerLink="/tasks" class="button-card">
       <ion-icon name="list" class="button-icon"></ion-icon>
       <p class="button-label">Gestor de Tareas</p>
-    </div>
-    <div class="button-card">
+    </ion-router-link>
+    <ion-router-link routerLink="/habits" class="button-card">
       <ion-icon name="repeat" class="button-icon"></ion-icon>
       <p class="button-label">Rastreador de Hábitos</p>
-    </div>
-    <div class="button-card">
+    </ion-router-link>
+    <ion-router-link routerLink="/productivity" class="button-card">
       <ion-icon name="analytics" class="button-icon"></ion-icon>
       <p class="button-label">Resúmenes</p>
-    </div>
-    <div class="button-card">
+    </ion-router-link>
+    <ion-router-link routerLink="/recommendations" class="button-card">
       <ion-icon name="book" class="button-icon"></ion-icon>
       <p class="button-label">Recomendaciones</p>
-    </div>
-    <div class="button-card">
+    </ion-router-link>
+    <ion-router-link routerLink="/routine" class="button-card">
       <ion-icon name="create" class="button-icon"></ion-icon>
       <p class="button-label">Crea tu Rutina</p>
-    </div>
+    </ion-router-link>
   </div>
-  
 </ion-content>

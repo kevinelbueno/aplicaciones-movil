@@ -1,13 +1,53 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>registro</ion-title>
+    <ion-title>Registro</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">registro</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="card-container">
+    <ion-card class="login-card">
+      <ion-card-header>
+        <ion-card-title>Crear Cuenta</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <form (ngSubmit)="onSubmit()" [formGroup]="registroForm">
+          <!-- Campo Nombre Completo -->
+          <ion-item>
+            <ion-label position="floating">Nombre Completo</ion-label>
+            <ion-input type="text" formControlName="nombre"></ion-input>
+          </ion-item>
+          <ion-note color="danger" *ngIf="registroForm?.get('nombre')?.invalid && registroForm?.get('nombre')?.touched">
+            El nombre es requerido.
+          </ion-note>
+          
+          <!-- Campo Correo Electrónico -->
+          <ion-item>
+            <ion-label position="floating">Correo Electrónico</ion-label>
+            <ion-input type="email" formControlName="email"></ion-input>
+          </ion-item>
+          <ion-note color="danger" *ngIf="registroForm?.get('email')?.invalid && registroForm?.get('email')?.touched">
+            Correo electrónico no válido.
+          </ion-note>
+          
+          <!-- Campo Contraseña -->
+          <ion-item>
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input type="password" formControlName="password" (focus)="clearPlaceholder($event)"></ion-input>
+          </ion-item>
+          <ion-note color="danger" *ngIf="registroForm?.get('password')?.invalid && registroForm?.get('password')?.touched">
+            La contraseña es requerida.
+          </ion-note>
+          <!-- Campo Confirmar Contraseña -->
+          <ion-item>
+            <ion-label>Confirmar Contraseña</ion-label>
+            <ion-input type="password" formControlName="confirmPassword"></ion-input>
+          </ion-item>
+          
+          <!-- Botón de Envío -->
+          <ion-button expand="block" type="submit" class="action-button" [disabled]="registroForm.invalid">Registrarse</ion-button>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>

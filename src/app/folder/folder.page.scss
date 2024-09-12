@@ -30,8 +30,9 @@ ion-content {
 }
 
 .button-icon {
-  font-size: 40px;
+  font-size: 50px;
   color: #d68e3c; /* Verde primario */
+  
 }
 
 .button-label {
@@ -59,6 +60,7 @@ ion-content {
     font-size: 12px; /* Ajusta el tamaño del texto */
   }
 }
+
 /* Estilos para la imagen principal en el medio del contenido */
 .logo-image {
   display: block;
@@ -76,4 +78,7 @@ ion-content {
   border-radius: 50%; /* Hace que la imagen tenga forma de círculo */
   object-fit: cover; /* Asegura que la imagen se ajuste dentro del círculo sin distorsionarse */
   margin-bottom: 10px; /* Espacio entre la imagen y el icono/texto */
+}
+.button-card {
+  text-align: center; /* Alinea el contenido de las tarjetas al centro horizontalmente */
 }

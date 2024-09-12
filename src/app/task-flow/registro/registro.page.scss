@@ -1,0 +1,96 @@
+:host {
+    --ion-background-color: #ffffff; /* Color de fondo para el host */
+  }
+  
+  .card-container {
+    display: flex; /* Alinea el contenido en un contenedor flexible */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    height: 100%; /* Altura completa del contenedor */
+    padding: 0 16px; /* Relleno horizontal */
+  }
+  
+  .login-card {
+    background-color: #fafafa; /* Color de fondo de la tarjeta de inicio de sesión */
+    width: 100%; /* Ancho completo del contenedor */
+    max-width: 500px; /* Ancho máximo de la tarjeta */
+    padding: 16px; /* Relleno interno de la tarjeta */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 9px 8px rgba(0, 0, 0, 0.1); /* Sombra para la tarjeta */
+  }
+  
+  .login-card ion-card-title {
+    color: #d0a36a; /* Café claro para el título en la tarjeta */
+  }
+  
+  .action-button {
+    background: #d0a36a; /* Café claro para el fondo del botón de acción */
+    color: #ffffff; /* Texto blanco para el botón de acción */
+    margin-top: 8px; /* Margen superior del botón */
+  }
+  
+  /* Estilos específicos para el botón de acción */
+  ion-button.action-button {
+    --border-color: #d0a36a; /* Café claro para el borde del botón */
+    --color: #ffffff; /* Texto blanco */
+    --background: #d0a36a; /* Fondo café claro */
+  }
+  
+  ion-button.action-button[fill="outline"] {
+    --border-color: #d0a36a; /* Café claro para el borde del botón de registro */
+    --color: #d0a36a; /* Café claro para el texto del botón de registro */
+    --background: transparent; /* Fondo transparente para el botón de registro */
+  }
+  
+  ion-button.action-button[fill="outline"]:hover {
+    --background: #d0a36a; /* Fondo café claro cuando se pasa el mouse sobre el botón de registro */
+    --color: #ffffff; /* Texto blanco cuando se pasa el mouse sobre el botón de registro */
+  }
+  
+  ion-button.action-button[fill="outline"]:active {
+    --background: #b38867; /* Un tono café claro más oscuro cuando el botón está presionado */
+    --color: #ffffff; /* Texto blanco cuando el botón está presionado */
+  }
+  
+  ion-note {
+    font-size: 0.875rem; /* Tamaño de fuente de las notas de error */
+    color: #d32f2f; /* Rojo para el texto de las notas de error */
+  }
+  
+  form {
+    display: flex; /* Alinea los elementos del formulario en un contenedor flexible */
+    flex-direction: column; /* Coloca los elementos en una columna */
+  }
+  
+  ion-item {
+    margin-bottom: 16px; /* Margen inferior para separar los ítems */
+    --background: #ffffff; /* Color de fondo del ítem */
+    --border-color: #ff9100; /* Color del borde del ítem */
+  }
+  
+  /* Estilos para etiquetas dentro de ion-item */
+  ion-item ion-label {
+    color: #c4b5b5; /* Color de las etiquetas por defecto */
+  }
+  
+  /* Cambia el color de la etiqueta cuando el campo de entrada está enfocado */
+  ion-item:focus-within ion-label {
+    color: #2c9650; /* Nuevo color para las etiquetas cuando se está escribiendo */
+  }
+  
+  ion-input {
+    color: #ff7b00; /* Color del texto en los campos de entrada */
+    --background: #ffffff; /* Color de fondo del campo de entrada */
+    --placeholder-color: #e6e6e6; /* Color del texto del placeholder */
+  }
+  
+  ion-input:focus {
+    --placeholder-color: transparent; /* Elimina el texto del placeholder cuando el campo está enfocado */
+  }
+  
+  .custom-label {
+    color: #7bff00; /* Color del texto personalizado para las etiquetas */
+    font-weight: bold; /* Negrita para el texto */
+    font-size: 20px; /* Tamaño del texto personalizado */
+  }
+  

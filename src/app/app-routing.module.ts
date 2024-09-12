@@ -9,42 +9,40 @@ const routes: Routes = [
   },
   {
     path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+    loadChildren: () => import('./folder/folder.module').then(m => m.FolderPageModule)
   },
   {
     path: 'login',
-    loadChildren: () => import('./task-flow/login/login.module').then( m => m.LoginPageModule)
+    loadChildren: () => import('./task-flow/login/login.module').then(m => m.LoginPageModule)
   },
   {
     path: 'calendar',
-    loadChildren: () => import('./task-flow/calendar/calendar.module').then( m => m.CalendarPageModule)
+    loadChildren: () => import('./task-flow/calendar/calendar.module').then(m => m.CalendarPageModule)
   },
   {
     path: 'tasks',
-    loadChildren: () => import('./task-flow/tasks/tasks.module').then( m => m.TasksPageModule)
+    loadChildren: () => import('./task-flow/tasks/tasks.module').then(m => m.TasksPageModule)
   },
   {
     path: 'habits',
-    loadChildren: () => import('./task-flow/habits/habits.module').then( m => m.HabitsPageModule)
+    loadChildren: () => import('./task-flow/habits/habits.module').then(m => m.HabitsPageModule)
   },
   {
     path: 'productivity',
-    loadChildren: () => import('./task-flow/productivity/productivity.module').then( m => m.ProductivityPageModule)
+    loadChildren: () => import('./task-flow/productivity/productivity.module').then(m => m.ProductivityPageModule)
   },
   {
     path: 'recommendations',
-    loadChildren: () => import('./task-flow/recommendations/recommendations.module').then( m => m.RecommendationsPageModule)
+    loadChildren: () => import('./task-flow/recommendations/recommendations.module').then(m => m.RecommendationsPageModule)
   },
   {
     path: 'registro',
-    loadChildren: () => import('./task-flow/registro/registro.module').then( m => m.RegistroPageModule)
+    loadChildren: () => import('./task-flow/registro/registro.module').then(m => m.RegistroPageModule)
   },
   {
     path: 'routine',
-    loadChildren: () => import('./task-flow/routine/routine.module').then( m => m.RoutinePageModule)
-  },
-  
- 
+    loadChildren: () => import('./task-flow/routine/routine.module').then(m => m.RoutinePageModule)
+  }
 ];
 
 @NgModule({

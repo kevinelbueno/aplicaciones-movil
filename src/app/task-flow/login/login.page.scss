@@ -1,5 +1,5 @@
 :host {
-  --ion-background-color: #ffffff; // Fondo blanco para la página
+  --ion-background-color: #ffffff; /* Fondo blanco para la página */
 }
 
 .card-container {
@@ -11,7 +11,7 @@
 }
 
 .login-card {
-  background-color: #ffffff; // Fondo blanco para la tarjeta
+  background-color: #ffffff; /* Fondo blanco para la tarjeta */
   width: 100%;
   max-width: 500px;
   padding: 16px;
@@ -20,12 +20,12 @@
 }
 
 .login-card ion-card-title {
-  color: #d0a36a; // Café claro para el título
+  color: #d0a36a; /* Café claro para el título */
 }
 
 .action-button {
-  background: #d0a36a; // Café claro para el fondo del botón
-  color: #ffffff; // Texto blanco para el botón
+  background: #d0a36a; /* Café claro para el fondo del botón */
+  color: #ffffff; /* Texto blanco para el botón */
   margin-top: 8px;
 }
 
@@ -63,7 +63,7 @@ ion-button[type="submit"].action-button:active {
 
 ion-note {
   font-size: 0.875rem;
-  color: #d32f2f; // Rojo para notas de error
+  color: #d32f2f; /* Rojo para notas de error */
 }
 
 form {
@@ -73,16 +73,33 @@ form {
 
 ion-item {
   margin-bottom: 16px;
-  --background: #ffffff; // Fondo blanco para los ítems del formulario
-  --border-color: #d0a36a; // Café claro para el borde del ítem
+  --background: #ffffff; /* Fondo blanco para los ítems del formulario */
+  --border-color: #d0a36a; /* Café claro para el borde del ítem */
 }
 
-ion-label {
-  color: #004d40; // Verde oscuro
+ion-item ion-label {
+  color: #004d40; /* Verde oscuro para el texto de las etiquetas */
+  font-size: 16px; /* Tamaño de fuente para las etiquetas */
 }
 
-ion-input {
-  color: #ff7b00; // Color de texto
-  --background: #ffffff; // Fondo blanco para los campos de entrada
-  --placeholder-color: #fafafa; // Color del texto del placeholder
+ion-item {
+  --background: #ffffff; /* Fondo blanco para los ítems del formulario */
+  --border-color: #d0a36a; /* Café claro para el borde del ítem */
+  padding: 16px; /* Asegúrate de que haya suficiente padding para evitar que el contenido se solape */
 }
+/* Asegura que el color del ion-label se mantenga visible en todos los estados */
+ion-item ion-label {
+  color: #ff7b00 !important; /* Usa !important para asegurar que el color se aplique */
+}
+
+ion-item ion-input {
+  color: #ff7b00; /* Color del texto en los campos de entrada */
+  --background: #ffffff; /* Fondo blanco para los campos de entrada */
+  --placeholder-color: #fafafa; /* Color del texto del placeholder */}
+
+  ion-input {
+    color: #ff7b00; /* Color del texto en los campos de entrada */
+    --background: #ffffff; /* Fondo blanco para los campos de entrada */
+    --placeholder-color: #e6e6e6; /* Color del texto del placeholder */
+    padding: 8px; /* Padding para asegurar que el texto no se corte */
+  }
